@@ -20,7 +20,7 @@ const questions = {
  normal,
  hard,
  expert,
-}
+};
 
 console.log(Logger("event", `Loaded ${normal.length} normal questions! [${config.timeout.normal}s timeout]`));
 console.log(Logger("event", `Loaded ${hard.length} hard questions! [${config.timeout.hard}s timeout]`));
@@ -73,7 +73,7 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/:mode/:question/:correct_answers", async (req, res) => {
- if(["normal", "hard", "expert"].includes(req.params.mode) == false) return res.redirect("/");
+ if (["normal", "hard", "expert"].includes(req.params.mode) == false) return res.redirect("/");
 
  if (req.params.question == config.max_questions) {
   return renderTemplate(res, req, "end_screen.ejs", {
@@ -93,7 +93,7 @@ app.get("/:mode/:question/:correct_answers", async (req, res) => {
 });
 
 app.post("/:mode/:question/:correct_answers", async (req, res) => {
- if(["normal", "hard", "expert"].includes(req.params.mode) == false) return res.redirect("/");
+ if (["normal", "hard", "expert"].includes(req.params.mode) == false) return res.redirect("/");
 
  renderTemplate(res, req, "answer.ejs", {
   mode: req.params.mode,
