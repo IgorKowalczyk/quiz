@@ -20,7 +20,6 @@ const questions = {
  normal,
  hard,
  expert,
-
 }
 
 console.log(Logger("event", `Loaded ${normal.length} normal questions! [${config.timeout.normal}s timeout]`));
