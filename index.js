@@ -1,3 +1,4 @@
+import "dotenv/config.js";
 import compression from "compression";
 import cookieParser from "cookie-parser";
 import ejs from "ejs";
@@ -14,7 +15,7 @@ const app = express();
 
 if (process.env.NODE_ENV !== "production") app.use(morgan(Logger("event", ":method :url :status :res[content-length] - :response-time ms")));
 const port = process.env.PORT || 8080;
-const domain = (process.env.DOMAIN || "http://localhost") + (port == 80 ? "" : ":" + port);
+const domain = process.env.DOMAIN || "http://localhost";
 
 const questions = {
  normal,
@@ -105,5 +106,5 @@ app.post("/:mode/:question/:correct_answers", async (req, res) => {
 });
 
 app.listen(port, null, null, () => {
- console.log(Logger("ready", `Listening on url ${domain}`));
+ console.log(Logger("ready", `Listening on port ${port}`));
 });
