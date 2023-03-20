@@ -1,0 +1,38 @@
+[
+ {
+  "question": "Skrzynia ma kształt prostopadłościanu. Podłoga skrzyni ma wymiary 1,5 m i 1,2 m, a wysokość skrzyni jest równa 1 m. Piasek wsypany do skrzyni zajmuje ¾ jej pojemności",
+  "answers": {
+   "all": { "1": "0,75m,2", "2": "1,35m3", "3": "1,25m2", "4": "1,35m2" },
+   "correct": "2"
+  }
+ },
+ {
+  "question": "Wzór na pole koła to",
+  "answers": {
+   "all": { "1": "4πr^6", "2": "2πr^2", "3": "πr^2", "4": "6πr^2" },
+   "correct": "2"
+  }
+ },
+ {
+  "question": "Średnicę pizzy zwiększono dwukrotnie, ile razy więcej potrzeba składników?",
+  "answers": {
+   "all": { "1": "dwukrotnie", "2": "czterokrotnie", "3": "pięciokrotnie", "4": "nie trzeba" },
+   "correct": "1"
+  }
+ },
+ {
+  "question": "Ala kupiła trzy zeszyty i blok rysunkowy. Średnia arytmetyczna cen tych czterech artykułów była równa 6 zł. Zeszyty kosztowały łącznie 15 zł",
+  "answers": {
+   "all": { "1": "9", "2": "6", "3": "3", "4": "4" },
+   "correct": "1"
+  }
+ },
+
+ {
+  "question": "Dorota sporządziła z cukru i wody syrop do deseru. Stosunek masy cukru do masy wody w tym syropie jest równy 6:4",
+  "answers": {
+   "all": { "1": "62,5", "2": "75", "3": "50", "4": "85" },
+   "correct": "2"
+  }
+ }
+]

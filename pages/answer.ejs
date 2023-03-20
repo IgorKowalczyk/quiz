@@ -1,0 +1,37 @@
+
+<%- include("./includes/head") %>
+<% correct = questions[question].answers.correct %>
+<% if(answer != correct) {
+ points = correct_answers;
+} else {
+ points = parseInt(correct_answers) + 1 
+} %>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<div class="main-title"><h1>Quiz Matematyczny</h1></div>
+<div class="main">
+ <% if(answer != correct) { %>
+  <div style="color: #ff6060;" class="sub-title"><h1>Zła odpowiedź!</h1></div>
+ <% } else { %>
+  <div style="color: #58ff6c;" class="sub-title"><h1>Dobra odpowiedź!</h1></div>
+ <% } %>
+<p class="blockd" style="margin-bottom: 0;"><b>Twoja odpowiedź:</b> <span class="code_style"><%= questions[question].answers.all[answer] || "Brak odpowiedzi" %></span></p>
+<p class="blockd"><b>Poprawna odpowiedź: </b> <span class="code_style"><%= questions[question].answers.all[correct.toString()] %></span></p>
+<% if(parseInt(question) + 1 == config.max_questions) { %>
+ <a class="link_button standard" href="<%= domain %>/<%= mode %>/<%= parseInt(question) + 1 %>/<%= points %>">Zakończ quiz!</a>
+<% } else { %>
+ <a class="link_button standard" href="<%= domain %>/<%= mode %>/<%= parseInt(question) + 1 %>/<%= points %>">Następne pytanie -></a>
+<% } %>
+</div>
+
+<% if(answer === correct) { %>
+<script type="text/javascript">
+window.addEventListener("load", function () {
+ setTimeout(function () {
+  confetti();
+ }, 200);
+})
+</script>
+<% } %>
+
+<%- include("./includes/footer") %>

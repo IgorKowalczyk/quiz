@@ -1,0 +1,34 @@
+{
+  "name": "@igorkowalczyk/quiiz",
+  "version": "2.0.0",
+  "description": "Math quiz game",
+  "author": "Igor Kowalczyk [Majonez.exe#2495]",
+  "type": "module",
+  "main": "node index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix"
+  },
+  "dependencies": {
+    "chalk": "5.2.0",
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.6",
+    "dotenv": "16.0.3",
+    "ejs": "3.1.9",
+    "express": "4.18.2",
+    "express-minify-html": "0.12.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@igorkowalczyk/eslint-config": "1.0.3",
+    "@igorkowalczyk/prettier-config": "1.0.3",
+    "eslint": "8.36.0",
+    "nodemon": "^2.0.21",
+    "prettier": "2.8.5"
+  },
+  "packageManager": "pnpm@7.30.0"
+}

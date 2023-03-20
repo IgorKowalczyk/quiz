@@ -1,0 +1,37 @@
+[
+ {
+  "question": "Co się wykonuje pierwsze, mnożenie czy dzielenie?",
+  "answers": {
+   "all": { "1": "Dzielenie", "2": "Wszystko jedno", "3": "Mnożenie", "4": "Dodawanie" },
+   "correct": "2"
+  }
+ },
+ {
+  "question": "Średnicę pizzy zwiększono dwukrotnie, ile razy więcej potrzeba składników?",
+  "answers": {
+   "all": { "1": "Dwukrotnie", "2": "Czterokrotnie", "3": "Sześciokrotnie", "4": "Nie trzeba" },
+   "correct": 1
+  }
+ },
+ {
+  "question": "Jakie jest pole deltoidu",
+  "answers": {
+   "all": { "1": "abc", "2": "a * h", "3": "1/2 d1*d2", "4": "a * h / 2" },
+   "correct": "3"
+  }
+ },
+ {
+  "question": "Pole trójkąta",
+  "answers": {
+   "all": { "1": "(a * h) / 2", "2": "a * b * c", "3": "3a", "4": "2√a" },
+   "correct": "1"
+  }
+ },
+ {
+  "question": "½ * 2^2023",
+  "answers": {
+   "all": { "1": "2^2020", "2": "2^2022", "3": "1^2022", "4": "1^2000" },
+   "correct": "2"
+  }
+ }
+]
