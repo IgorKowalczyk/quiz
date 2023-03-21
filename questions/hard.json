@@ -14,21 +14,21 @@
   }
  },
  {
-  "question": "Jakie jest pole deltoidu",
+  "question": "Jakie jest pole deltoidu?",
   "answers": {
    "all": { "1": "abc", "2": "a * h", "3": "(d1 * d2) / 2", "4": "(a * h) / 2" },
    "correct": "3"
   }
  },
  {
-  "question": "Pole trójkąta",
+  "question": "Jakie jest pole trójkąta?",
   "answers": {
    "all": { "1": "(a * h) / 2", "2": "a * b * c", "3": "3a", "4": "2√a" },
    "correct": "1"
   }
  },
  {
-  "question": "½ * 2²⁰²³",
+  "question": "Oblicz: ½ * 2²⁰²³",
   "answers": {
    "all": { "1": "2²⁰²⁰", "2": "2²⁰²²", "3": "1²⁰²²", "4": "1²⁰⁰⁰" },
    "correct": "2"
