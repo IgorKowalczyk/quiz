@@ -16,7 +16,7 @@
  {
   "question": "Jakie jest pole deltoidu",
   "answers": {
-   "all": { "1": "abc", "2": "a * h", "3": "1/2 d1*d2", "4": "a * h / 2" },
+   "all": { "1": "abc", "2": "a * h", "3": "(d1 * d2) / 2", "4": "(a * h) / 2" },
    "correct": "3"
   }
  },
