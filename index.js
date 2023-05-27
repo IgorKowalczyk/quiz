@@ -11,6 +11,7 @@ import hard from "./questions/hard.json" assert { type: "json" };
 import normal from "./questions/normal.json" assert { type: "json" };
 import { Logger } from "./utils/logger.js";
 import path from "path";
+import exp from "constants";
 const app = express();
 
 if (process.env.NODE_ENV !== "production") app.use(morgan(Logger("event", ":method :url :status :res[content-length] - :response-time ms")));
@@ -108,3 +109,5 @@ app.post("/:mode/:question/:correct_answers", async (req, res) => {
 app.listen(port, null, null, () => {
  console.log(Logger("ready", `Listening on port ${port}`));
 });
+
+export default app;
