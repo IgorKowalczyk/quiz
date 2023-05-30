@@ -195,7 +195,7 @@ input[type="radio"]:checked::before {
  display: grid;
  grid-template-columns: repeat(2, 1fr);
  grid-template-rows: repeat(2, 1fr);
- grid-column-gap: 0px;
+ grid-column-gap: 10px;
  grid-row-gap: 0px;
  grid-auto-flow: column;
  justify-content: center;
@@ -231,4 +231,7 @@ input[type="radio"]:checked::before {
  padding: 1px 7px;
  border-radius: 5px;
  box-shadow: 0 3px 15px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 8%);
+ width: fit-content;
+ display: inline-block;
+ margin-right: 4px;
 }

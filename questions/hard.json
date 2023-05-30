@@ -2,36 +2,121 @@
  {
   "question": "Co się wykonuje pierwsze, mnożenie czy dzielenie?",
   "answers": {
-   "all": { "1": "Dzielenie", "2": "Wszystko jedno", "3": "Mnożenie", "4": "Dodawanie" },
-   "correct": "2"
+   "all": [
+    {
+     "id": "1",
+     "text": "Dzielenie"
+    },
+    {
+     "id": "2",
+     "text": "Wszystko jedno",
+     "correct": true
+    },
+    {
+     "id": "3",
+     "text": "Mnożenie"
+    },
+    {
+     "id": "4",
+     "text": "Dodawanie"
+    }
+   ]
   }
  },
  {
   "question": "Średnicę pizzy zwiększono dwukrotnie, ile razy więcej potrzeba składników?",
   "answers": {
-   "all": { "1": "Dwukrotnie", "2": "Czterokrotnie", "3": "Sześciokrotnie", "4": "Nie trzeba" },
-   "correct": 1
+   "all": [
+    {
+     "id": "1",
+     "text": "Dwukrotnie",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "Czterokrotnie"
+    },
+    {
+     "id": "3",
+     "text": "Sześciokrotnie"
+    },
+    {
+     "id": "4",
+     "text": "Nie trzeba"
+    }
+   ]
   }
  },
  {
   "question": "Jakie jest pole deltoidu?",
   "answers": {
-   "all": { "1": "abc", "2": "a * h", "3": "(d1 * d2) / 2", "4": "(a * h) / 2" },
-   "correct": "3"
+   "all": [
+    {
+     "id": "1",
+     "text": "abc"
+    },
+    {
+     "id": "2",
+     "text": "a * h"
+    },
+    {
+     "id": "3",
+     "text": "(d1 * d2) / 2",
+     "correct": true
+    },
+    {
+     "id": "4",
+     "text": "(a * h) / 2"
+    }
+   ]
   }
  },
  {
   "question": "Jakie jest pole trójkąta?",
   "answers": {
-   "all": { "1": "(a * h) / 2", "2": "a * b * c", "3": "3a", "4": "2√a" },
-   "correct": "1"
+   "all": [
+    {
+     "id": "1",
+     "text": "(a * h) / 2",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "a * b * c"
+    },
+    {
+     "id": "3",
+     "text": "3a"
+    },
+    {
+     "id": "4",
+     "text": "2√a"
+    }
+   ]
   }
  },
  {
   "question": "Oblicz: ½ * 2²⁰²³",
   "answers": {
-   "all": { "1": "2²⁰²⁰", "2": "2²⁰²²", "3": "1²⁰²²", "4": "1²⁰⁰⁰" },
-   "correct": "2"
+   "all": [
+    {
+     "id": "1",
+     "text": "2²⁰²⁰"
+    },
+    {
+     "id": "2",
+     "text": "2²⁰²²",
+     "correct": true
+    },
+    {
+     "id": "3",
+     "text": "1²⁰²²"
+    },
+    {
+     "id": "4",
+     "text": "1²⁰⁰⁰"
+    }
+   ]
   }
  }
 ]

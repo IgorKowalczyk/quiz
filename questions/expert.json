@@ -1,38 +1,124 @@
 [
  {
-  "question": "Pierwiastek z 64 jest równy",
+  "question": "Pierwiastek z 64 jest równy:",
   "answers": {
-   "all": { "1": "Ósmej potęgi liczby 2", "2": "4", "3": "Polu kwadratu o boku 8", "4": "16" },
-   "correct": "3"
+   "all": [
+    {
+     "id": "1",
+     "text": "Ósmej potęgi liczby 2"
+    },
+    {
+     "id": "2",
+     "text": "4"
+    },
+    {
+     "id": "3",
+     "text": "Polu kwadratu o boku 8",
+     "correct": true
+    },
+    {
+     "id": "4",
+     "text": "16"
+    }
+   ]
   }
  },
  {
-  "question": " Aby zamienić 80mm na metry należy: ",
+  "question": " Aby zamienić 80mm na metry należy:",
   "answers": {
-   "all": { "1": "Podzielić przez 1000", "2": "Pomnożyć przez 100", "3": "Podzielić przez 20", "4": "Pomnożyć przez 10" },
-   "correct": "1"
+   "all": [
+    {
+     "id": "1",
+     "text": "Podzielić przez 1000",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "Pomnożyć przez 100"
+    },
+    {
+     "id": "3",
+     "text": "Podzielić przez 20"
+    },
+    {
+     "id": "4",
+     "text": "Pomnożyć przez 10",
+     "correct": true
+    }
+   ]
   }
  },
 
  {
-  "question": "⅔ - 0,(6) jest równe",
+  "question": "⅔ - 0,(6) jest równe:",
   "answers": {
-   "all": { "1": "0", "2": "4", "3": "2", "4": "4" },
-   "correct": "1"
+   "all": [
+    {
+     "id": "1",
+     "text": "0",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "4"
+    },
+    {
+     "id": "3",
+     "text": "2"
+    },
+    {
+     "id": "4",
+     "text": "4"
+    }
+   ]
   }
  },
  {
   "question": "Średnicę pizzy zwiększono dwukrotnie, ile razy więcej potrzeba składników?",
   "answers": {
-   "all": { "1": "dwukrotnie", "2": "czterokrotnie", "3": "sześciokrotnie", "4": "półtora" },
-   "correct": 1
+   "all": [
+    {
+     "id": "1",
+     "text": "dwukrotnie",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "czterokrotnie"
+    },
+    {
+     "id": "3",
+     "text": "sześciokrotnie"
+    },
+    {
+     "id": "4",
+     "text": "półtora"
+    }
+   ]
   }
  },
  {
-  "question": "Ile to jest 3 + 2 (takie łatwe na koniec 😉)",
+  "question": "Ile to jest 3 + 2 (takie łatwe na koniec 😉)?",
   "answers": {
-   "all": { "1": "5", "2": "32", "3": "23", "4": "6" },
-   "correct": "1"
+   "all": [
+    {
+     "id": "1",
+     "text": "5",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "32"
+    },
+    {
+     "id": "3",
+     "text": "23"
+    },
+    {
+     "id": "4",
+     "text": "6"
+    }
+   ]
   }
  }
 ]

@@ -2,37 +2,122 @@
  {
   "question": "Skrzynia ma kształt prostopadłościanu. Podłoga skrzyni ma wymiary 1,5 m i 1,2 m, a wysokość skrzyni jest równa 1 m. Piasek wsypany do skrzyni zajmuje ¾ jej pojemności. Ile zajmuje piasek?",
   "answers": {
-   "all": { "1": "0,75m,2", "2": "1,35m3", "3": "1,25m2", "4": "1,35m2" },
-   "correct": "2"
+   "all": [
+    {
+     "id": "1",
+     "text": "0,75m2"
+    },
+    {
+     "id": "2",
+     "text": "1,35m3",
+     "correct": true
+    },
+    {
+     "id": "3",
+     "text": "1,25m2"
+    },
+    {
+     "id": "4",
+     "text": "1,35m2"
+    }
+   ]
   }
  },
  {
-  "question": "Wzór na pole koła to",
+  "question": "Wzór na pole koła to:",
   "answers": {
-   "all": { "1": "4πr⁶", "2": "2πr²", "3": "πr²", "4": "6πr²" },
-   "correct": "2"
+   "all": [
+    {
+     "id": "1",
+     "text": "4πr⁶"
+    },
+    {
+     "id": "2",
+     "text": "2πr²"
+    },
+    {
+     "id": "3",
+     "text": "πr²",
+     "correct": true
+    },
+    {
+     "id": "4",
+     "text": "6πr²"
+    }
+   ]
   }
  },
  {
   "question": "Średnicę pizzy zwiększono dwukrotnie, ile razy więcej potrzeba składników?",
   "answers": {
-   "all": { "1": "dwukrotnie", "2": "czterokrotnie", "3": "pięciokrotnie", "4": "nie trzeba" },
-   "correct": "1"
+   "all": [
+    {
+     "id": "1",
+     "text": "dwukrotnie",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "czterokrotnie"
+    },
+    {
+     "id": "3",
+     "text": "pięciokrotnie"
+    },
+    {
+     "id": "4",
+     "text": "nie trzeba"
+    }
+   ]
   }
  },
  {
   "question": "Ala kupiła trzy zeszyty i blok rysunkowy. Średnia arytmetyczna cen tych czterech artykułów była równa 6 zł. Zeszyty kosztowały łącznie 15 zł. Ile kosztuje blok rysunkowy?",
   "answers": {
-   "all": { "1": "9", "2": "6", "3": "3", "4": "4" },
-   "correct": "1"
+   "all": [
+    {
+     "id": "1",
+     "text": "9",
+     "correct": true
+    },
+    {
+     "id": "2",
+     "text": "6"
+    },
+    {
+     "id": "3",
+     "text": "3"
+    },
+    {
+     "id": "4",
+     "text": "4"
+    }
+   ]
   }
  },
 
  {
   "question": "Dorota sporządziła z cukru i wody syrop do deseru. Stosunek masy cukru do masy wody w tym syropie jest równy 6:4. Ile wynosi masa cukru?",
   "answers": {
-   "all": { "1": "62,5", "2": "75", "3": "50", "4": "85" },
-   "correct": "2"
+   "all": [
+    {
+     "id": "1",
+     "text": "62,5"
+    },
+    {
+     "id": "2",
+     "text": "75",
+     "correct": true
+    },
+    {
+     "id": "3",
+     "text": "50"
+    },
+    {
+     "id": "4",
+     "text": "85"
+    }
+   ]
   }
  }
 ]
