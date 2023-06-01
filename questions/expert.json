@@ -97,21 +97,21 @@
   }
  },
  {
-  "question": "Ile to jest 3 + 2 (takie łatwe na koniec 😉)?",
+  "question": "Ile przekątnych ma sześciokąt?",
   "answers": {
    "all": [
     {
      "id": "1",
-     "text": "5",
+     "text": "9",
      "correct": true
     },
     {
      "id": "2",
-     "text": "32"
+     "text": "18"
     },
     {
      "id": "3",
-     "text": "23"
+     "text": "14"
     },
     {
      "id": "4",
