@@ -3,7 +3,7 @@ import compression from "compression";
 import cookieParser from "cookie-parser";
 import ejs from "ejs";
 import express from "express";
-import minifyHTML from "express-minify-html";
+// import minifyHTML from "express-minify-html";
 import morgan from "morgan";
 import config from "./config.js";
 import expert from "./questions/expert.json" assert { type: "json" };
@@ -11,7 +11,6 @@ import hard from "./questions/hard.json" assert { type: "json" };
 import normal from "./questions/normal.json" assert { type: "json" };
 import { Logger } from "./utils/logger.js";
 import path from "path";
-import exp from "constants";
 const app = express();
 
 if (process.env.NODE_ENV !== "production") app.use(morgan(Logger("event", ":method :url :status :res[content-length] - :response-time ms")));
@@ -34,20 +33,20 @@ app.set("view engine", "html");
 
 app.use(express.static("static"));
 app.use(compression());
-app.use(
- minifyHTML({
-  override: true,
-  exception_url: false,
-  htmlMinifier: {
-   removeComments: true,
-   collapseWhitespace: true,
-   collapseBooleanAttributes: true,
-   removeAttributeQuotes: true,
-   removeEmptyAttributes: true,
-   minifyJS: true,
-  },
- })
-);
+// app.use(
+//  minifyHTML({
+//   override: true,
+//   exception_url: false,
+//   htmlMinifier: {
+//    removeComments: true,
+//    collapseWhitespace: true,
+//    collapseBooleanAttributes: true,
+//    removeAttributeQuotes: true,
+//    removeEmptyAttributes: true,
+//    minifyJS: true,
+//   },
+//  })
+// );
 
 const renderTemplate = (res, req, template, data = {}) => {
  const baseData = {

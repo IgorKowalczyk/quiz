@@ -1,58 +1,51 @@
 <%- include("./includes/head") %>
-  <div class="main-title">
-    <h1>Quiz Matematyczny</h1>
-  </div>
-  <div class="main">
-    <div class="sub-title">
-      <h1>
-        <%= questions[question_number]?.question %>
-      </h1>
-    </div>
-    <div class="answers_container">
-      <form id="selection" method="POST"
-        action="<%= domain %>/<%= mode %>/<%= question_number %>/<%= correct_answers %>">
-        <input type="hidden" name="correct_answers" value="<%= correct_answers %>" />
-        <div class="grid">
-          <% questions[question_number]?.answers.all.sort(()=> Math.random() - 0.5).map((answer, index)=> { %>
-            <label class="answer_select" id="<%= index %>">
-              <input type="radio" name="answer" value="<%= answer.id %>" />
-              <%= String.fromCharCode(97 + index) %>) <%= answer.text %>
-            </label>
-            <% }) %>
-        </div>
-        <button type="submit" class="standard">Wyślij!</button>
-      </form>
-    </div>
-    </br></br>
-    <div style="position: relative;float: right;margin-bottom: -20px;opacity: 0.3;">Pytanie: <%=
-        parseInt(question_number) + 1 %>/<%= config.max_questions %>
-    </div>
-    <div id="timeout_container"
-      style="transition: 0.2s; position: relative; float: left; margin-bottom: -20px; opacity: 0.7; display: flex; align-items: center;">
-      <%- include("./includes/icons/timer") %> Na odpowiedź zostało: <span id="timeout_span" style="padding-left: 5px;">
-          <%= config.timeout[mode] %>s
-        </span>
-    </div>
-    <script type="text/javascript">
-      const form = document.getElementById("selection");
-      const timeout_span = document.getElementById("timeout_span");
-      const timeout_container = document.getElementById("timeout_container");
-      const timer = document.getElementById("timer");
-      let timeout = <%= config.timeout[mode] %>;
-      let orgin_timeout = <%= config.timeout[mode] %>;
-      const countdown = setInterval(countdown_f, 1000);
-      function countdown_f() {
-        if (timeout == -1) {
-          clearTimeout(countdown);
-          form.submit();
-        } else {
-          timeout_span.innerHTML = `${timeout}s`;
-          if (timeout <= Math.floor(orgin_timeout / 2)) {
-            timer.style.fill = "#ff6060";
-            timeout_container.style.color = "#ff6060";
-          }
-          timeout--;
-        }
+<div class="main-title">
+ <h1>Quiz Matematyczny</h1>
+</div>
+<div class="main">
+ <div class="sub-title">
+  <h1>
+   <%= questions[question_number]?.question %>
+  </h1>
+ </div>
+ <div class="answers_container">
+  <form id="selection" method="POST" action="<%= domain %>/<%= mode %>/<%= question_number %>/<%= correct_answers %>">
+   <input type="hidden" name="correct_answers" value="<%= correct_answers %>" />
+   <div class="grid">
+    <% questions[question_number]?.answers.all.sort(()=> Math.random() - 0.5).map((answer, index)=> { %>
+    <label class="answer_select" id="<%= index %>">
+     <input type="radio" name="answer" value="<%= answer.id %>" />
+     <%= String.fromCharCode(97 + index) %>)
+     <%= answer.text %>
+    </label>
+    <% }) %>
+   </div>
+   <button type="submit" class="standard">Wyślij!</button>
+  </form>
+ </div>
+ <br /><br />
+ <div style="position: relative; float: right; margin-bottom: -20px; opacity: 0.3">Pytanie: <%= parseInt(question_number) + 1 %>/<%= config.max_questions %></div>
+ <div id="timeout_container" style="transition: 0.2s; position: relative; float: left; margin-bottom: -20px; opacity: 0.7; display: flex; align-items: center"><%- include("./includes/icons/timer") %> Na odpowiedź zostało: <span id="timeout_span" style="padding-left: 5px"> <%= config.timeout[mode] %>s </span></div>
+ <script type="text/javascript">
+  const form = document.getElementById("selection");
+  const timeout_span = document.getElementById("timeout_span");
+  const timeout_container = document.getElementById("timeout_container");
+  const timer = document.getElementById("timer");
+  let timeout = <%= config.timeout[mode] %>;
+  let orgin_timeout = <%= config.timeout[mode] %>;
+  const countdown = setInterval(countdown_f, 1000);
+  function countdown_f() {
+    if (timeout == -1) {
+      clearTimeout(countdown);
+      form.submit();
+    } else {
+      timeout_span.innerHTML = `${timeout}s`;
+      if (timeout <= Math.floor(orgin_timeout / 2)) {
+        timer.style.fill = "#ff6060";
+        timeout_container.style.color = "#ff6060";
       }
-    </script>
-    <%- include("./includes/footer") %>
+      timeout--;
+    }
+  }
+ </script>
+</div>
