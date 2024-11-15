@@ -1,7 +1,7 @@
 import crypto from "node:crypto";
 import http from "node:http";
 import cors from "cors";
-import dotenv from "dotenv";
+import "dotenv/config";
 import express from "express";
 import morgan from "morgan";
 import { Server } from "socket.io";
@@ -10,8 +10,6 @@ import { getQuiz, getMembers, addMember, updateMembers, setIsOnAnswer, toggleSta
 import { Logger } from "@/lib/logger";
 import getClient from "@/lib/redis";
 import { authSchema, joinOrRejoinQuiz, kickMember, quizId as quizIdValidator, QuizMember } from "@/validators/quiz";
-
-dotenv.config();
 
 const app = express();
 const client = getClient();
