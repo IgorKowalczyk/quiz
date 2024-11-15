@@ -1,6 +1,5 @@
 import crypto from "node:crypto";
 import http from "node:http";
-import { instrument } from "@socket.io/admin-ui";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
@@ -47,11 +46,6 @@ const io = new Server(server, {
   methods: ["GET", "POST"],
   credentials: false,
  },
-});
-
-instrument(io, {
- auth: false,
- mode: process.env.NODE_ENV === "production" ? "production" : "development",
 });
 
 const getQuestion = async (quizId: string | number, questionIndex: number) => {
