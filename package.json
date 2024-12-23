@@ -84,7 +84,7 @@
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "3.0.0-beta.16",
-    "@igorkowalczyk/prettier-config": "3.0.0-beta.15",
+    "@igorkowalczyk/prettier-config": "3.0.0-beta.16",
     "@types/node": "22.10.2",
     "@types/qrcode": "1.5.5",
     "@types/react": "19.0.2",
