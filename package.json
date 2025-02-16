@@ -87,7 +87,7 @@
     "@igorkowalczyk/prettier-config": "3.0.2",
     "@types/node": "22.13.4",
     "@types/qrcode": "1.5.5",
-    "@types/react": "19.0.8",
+    "@types/react": "19.0.9",
     "@types/react-dom": "19.0.3",
     "eslint": "9.20.1",
     "postcss": "8.5.2",
