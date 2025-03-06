@@ -1,12 +1,12 @@
+import { RotateCwIcon } from "lucide-react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { ThemeProvider } from "next-themes";
 import FullScreen from "@/components/fullscreen";
-import { Toaster } from "@/components/ui/sonner";
-import "./globals.css";
 import SocketStatus from "@/components/socket-status";
 import ThemeSwitcher from "@/components/theme-switcher";
-import { ThemeProvider } from "next-themes";
-import { RotateCwIcon } from "lucide-react";
+import { Toaster } from "@/components/ui/sonner";
+import "./globals.css";
 
 const geistSans = localFont({
  src: "./fonts/GeistVF.woff",
