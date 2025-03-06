@@ -83,7 +83,7 @@
     "zod-validation-error": "3.4.0"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "3.0.2",
+    "@igorkowalczyk/eslint-config": "3.0.7",
     "@igorkowalczyk/prettier-config": "3.0.2",
     "@types/node": "22.13.9",
     "@types/qrcode": "1.5.5",
