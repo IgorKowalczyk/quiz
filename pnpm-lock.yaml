@@ -162,8 +162,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0
       react-day-picker:
-        specifier: 9.6.0
-        version: 9.6.0(react@19.0.0)
+        specifier: 9.6.1
+        version: 9.6.1(react@19.0.0)
       react-dom:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
@@ -3798,8 +3798,8 @@ packages:
     resolution: {integrity: sha512-8zGqypfENjCIqGhgXToC8aB2r7YrBX+AQAfIPs/Mlk+BtPTztOvTS01NRW/3Eh60J+a48lt8qsCzirQ6loCVfA==}
     engines: {node: '>= 0.8'}
 
-  react-day-picker@9.6.0:
-    resolution: {integrity: sha512-D1Cbc4IrSGayBhEGq8Zk4Ez/5grUGEgu01qWIgM2gxdSQyWztgsmIr0Qhh2oySUY+449PDOOeh80Hm46VFVpJA==}
+  react-day-picker@9.6.1:
+    resolution: {integrity: sha512-PiRT/l6yk+fLpSmyMFUHIep8dbKAlilJGfDB0N2krXFhnxbitZf/t+ePDLk8kou/lYUVWAfIIxBJjFuvrNy7Hw==}
     engines: {node: '>=18'}
     peerDependencies:
       react: '>=16.8.0'
@@ -8080,7 +8080,7 @@ snapshots:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  react-day-picker@9.6.0(react@19.0.0):
+  react-day-picker@9.6.1(react@19.0.0):
     dependencies:
       '@date-fns/tz': 1.2.0
       date-fns: 4.1.0
