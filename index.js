@@ -13,8 +13,8 @@ import path from "path";
 const app = express();
 
 if (process.env.NODE_ENV !== "production") app.use(morgan(Logger("event", ":method :url :status :res[content-length] - :response-time ms")));
+
 const port = process.env.PORT || 8080;
-const domain = process.env.DOMAIN ? `${process.env.DOMAIN}${port}` : `http://localhost:${port}`;
 
 const questions = {
  normal,
@@ -36,7 +36,6 @@ app.use(compression());
 
 const renderTemplate = (res, req, template, data = {}) => {
  const baseData = {
-  domain,
   config,
   port,
  };
