@@ -3,19 +3,18 @@ import compression from "compression";
 import cookieParser from "cookie-parser";
 import ejs from "ejs";
 import express from "express";
-// import minifyHTML from "express-minify-html";
 import morgan from "morgan";
 import config from "./config.js";
-import expert from "./questions/expert.json" assert { type: "json" };
-import hard from "./questions/hard.json" assert { type: "json" };
-import normal from "./questions/normal.json" assert { type: "json" };
+import expert from "./questions/expert.json" with { type: "json" };
+import hard from "./questions/hard.json" with { type: "json" };
+import normal from "./questions/normal.json" with { type: "json" };
 import { Logger } from "./utils/logger.js";
 import path from "path";
 const app = express();
 
 if (process.env.NODE_ENV !== "production") app.use(morgan(Logger("event", ":method :url :status :res[content-length] - :response-time ms")));
 const port = process.env.PORT || 8080;
-const domain = process.env.DOMAIN || "http://localhost";
+const domain = process.env.DOMAIN ? `${process.env.DOMAIN}${port}` : `http://localhost:${port}`;
 
 const questions = {
  normal,
@@ -33,20 +32,6 @@ app.set("view engine", "html");
 
 app.use(express.static("static"));
 app.use(compression());
-// app.use(
-//  minifyHTML({
-//   override: true,
-//   exception_url: false,
-//   htmlMinifier: {
-//    removeComments: true,
-//    collapseWhitespace: true,
-//    collapseBooleanAttributes: true,
-//    removeAttributeQuotes: true,
-//    removeEmptyAttributes: true,
-//    minifyJS: true,
-//   },
-//  })
-// );
 
 const renderTemplate = (res, req, template, data = {}) => {
  const baseData = {
@@ -58,13 +43,6 @@ const renderTemplate = (res, req, template, data = {}) => {
 };
 
 app.use(cookieParser());
-
-/*
-app.use("trust proxy", 1);
-app.use((req, res, next) => {
- req.secure ? next() : res.redirect("https://" + req.headers.host + req.url);
-});
-*/
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
