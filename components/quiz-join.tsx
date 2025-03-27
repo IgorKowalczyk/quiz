@@ -112,13 +112,13 @@ export default function QuizJoin({ quizId }: { quizId: string }) {
     <>
      <PlayIcon className="mx-0 size-12 rounded-full border p-3 md:size-16 md:p-4" />
      <h1 className="text-center text-lg md:text-2xl">Quiz has started</h1>
-     <p className="mb-4 text-center text-muted-foreground">Please wait for the questions to appear.</p>
+     <p className="text-muted-foreground mb-4 text-center">Please wait for the questions to appear.</p>
     </>
    ) : !isJoined ? (
     <>
      <PlayIcon className="mx-0 size-12 rounded-full border p-3 md:size-16 md:p-4" />
      <h1 className="text-center text-lg md:text-2xl">Join the quiz</h1>
-     <p className="mb-4 text-center text-muted-foreground">The quiz will start once everyone has joined.</p>
+     <p className="text-muted-foreground mb-4 text-center">The quiz will start once everyone has joined.</p>
      <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
        <FormField
@@ -152,7 +152,7 @@ export default function QuizJoin({ quizId }: { quizId: string }) {
     <>
      <RotateCw className="mx-0 size-12 animate-spin rounded-full border p-3 md:size-16 md:p-4" />
      <h1 className="text-center text-lg md:text-2xl">Waiting for the quiz to start</h1>
-     <p className="mb-4 text-center text-muted-foreground">Please wait while the quiz creator starts the quiz.</p>
+     <p className="text-muted-foreground mb-4 text-center">Please wait while the quiz creator starts the quiz.</p>
     </>
    )}
   </>

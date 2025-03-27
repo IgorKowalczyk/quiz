@@ -64,6 +64,13 @@ export default function CreateQuizPage() {
  const [importData, setImportData] = React.useState("");
 
  const onSubmit = async (data: Quiz) => {
+  // Validate that each question has at least one correct option
+  const hasInvalidQuestions = data.questions.some((question) => question.options.every((option) => !option.correct));
+
+  if (hasInvalidQuestions) {
+   return toast.error("Each question must have at least one correct answer.");
+  }
+
   const result = quiz.safeParse(data);
   if (!result.success) {
    const error = errorParser(result.error.issues);
@@ -139,13 +146,13 @@ export default function CreateQuizPage() {
        )}
       />
       <div className="flex flex-wrap justify-center gap-4">
-       <Link href="/" className={buttonVariants({ variant: "secondary" })}>
+       <Link href="/" className={buttonVariants({ variant: "outline" })}>
         <HomeIcon className="mr-2 size-4" />
         Go back
        </Link>
-       <Button type="submit" disabled={form.getValues("name") === ""}>
+       <Button type="submit" disabled={!form.watch("name")}>
         Next
-        <ChevronRightIcon className="ml-2 size-4" />
+        <ChevronRightIcon className="size-4" />
        </Button>
       </div>
      </form>
@@ -180,7 +187,7 @@ export default function CreateQuizPage() {
           </FormItem>
          )}
         />
-        <p className="my-2 text-sm text-muted-foreground">Add a question to your quiz, remember to select the correct answer.</p>
+        <p className="text-muted-foreground my-2 text-sm">Add a question to your quiz, remember to select the correct answer.</p>
         <div className="mt-4 space-y-4 border-l-4 pl-4">
          {field.options.map((_, i) => (
           <div key={i} className="flex items-center gap-4">
@@ -239,13 +246,13 @@ export default function CreateQuizPage() {
       </div>
 
       <div className="mt-4 flex flex-wrap justify-center gap-4">
-       <Link href="/" className={buttonVariants({ variant: "secondary" })}>
+       <Link href="/" className={buttonVariants({ variant: "outline" })}>
         <HomeIcon className="mr-2 size-4" />
         Go back
        </Link>
-       <Button type="submit" disabled={!form.formState.isValid || fields.length === 0 || fields.length >= 20}>
+       <Button type="submit" disabled={fields.length === 0 || fields.length >= 20}>
         Submit
-        <ChevronRightIcon className="ml-2 size-4" />
+        <ChevronRightIcon className="size-4" />
        </Button>
       </div>
      </form>
@@ -255,9 +262,9 @@ export default function CreateQuizPage() {
     <DialogContent>
      <DialogHeader>
       <DialogTitle className="text-lg font-semibold">Confirm Removal</DialogTitle>
-      <DialogDescription className="mt-2 text-sm text-muted-foreground">Are you sure you want to remove this question? This action cannot be undone.</DialogDescription>
+      <DialogDescription className="text-muted-foreground mt-2 text-sm">Are you sure you want to remove this question? This action cannot be undone.</DialogDescription>
      </DialogHeader>
-     <DialogFooter className="gap-4 !space-x-0">
+     <DialogFooter className="gap-4 space-x-0!">
       <Button type="button" variant="secondary" onClick={() => setIsModalOpen(false)}>
        <XIcon className="mr-2 size-4" />
        Cancel
@@ -282,7 +289,7 @@ export default function CreateQuizPage() {
     <DialogContent>
      <DialogHeader>
       <DialogTitle className="text-lg font-semibold">Import Quiz</DialogTitle>
-      <DialogDescription className="mt-2 text-sm text-muted-foreground">You can import quiz data here, just paste the JSON data below.</DialogDescription>
+      <DialogDescription className="text-muted-foreground mt-2 text-sm">You can import quiz data here, just paste the JSON data below.</DialogDescription>
      </DialogHeader>
      <Alert variant="destructive">
       <AlertCircleIcon className="size-4" />
@@ -290,7 +297,7 @@ export default function CreateQuizPage() {
       <AlertDescription>Importing quiz data will overwrite the current quiz data.</AlertDescription>
      </Alert>
      <Textarea placeholder="Enter quiz data" value={importData} onChange={(e) => setImportData(e.target.value)} className="min-h-40" />
-     <DialogFooter className="gap-4 !space-x-0">
+     <DialogFooter className="gap-4 space-x-0!">
       <Button variant="secondary" onClick={() => setIsImportDialogOpen(false)}>
        <XIcon className="mr-2 size-4" />
        Cancel

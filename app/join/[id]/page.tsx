@@ -47,7 +47,7 @@ export default async function Page(props: { params: Promise<{ id: string }>; sea
    <p className="text-center text-lg md:text-2xl">
     Or enter the code:{" "}
     <Link href={`/quiz/${id}`} target="_blank">
-     <code className="relative rounded bg-muted px-2 py-1 font-mono">
+     <code className="bg-muted relative rounded px-2 py-1 font-mono">
       {id.slice(0, 3)}-{id.slice(3)}
      </code>
     </Link>

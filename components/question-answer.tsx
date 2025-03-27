@@ -83,17 +83,17 @@ export default function QuestionAnswer({ userId, quizId }: { userId: string; qui
  return (
   <>
    {timeRemaining > 0 && (
-    <Badge className="absolute left-1/2 top-0 mt-4 -translate-x-1/2 transform md:text-lg" variant="secondary">
+    <Badge className="absolute top-0 left-1/2 mt-4 -translate-x-1/2 transform md:text-lg" variant="secondary">
      {timeRemaining} seconds left
     </Badge>
    )}
 
    {completed ? (
-    <span className="flex items-center gap-2 text-muted-foreground">
+    <span className="text-muted-foreground flex items-center gap-2">
      <RotateCwIcon className="size-4 shrink-0 animate-spin" /> Waiting for other players to submit their answers...
     </span>
    ) : question.question === "" || timeRemaining === 0 ? (
-    <span className="flex items-center gap-2 text-muted-foreground">
+    <span className="text-muted-foreground flex items-center gap-2">
      <RotateCwIcon className="size-4 shrink-0 animate-spin" /> Waiting for the next question...
     </span>
    ) : (

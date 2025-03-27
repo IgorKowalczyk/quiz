@@ -31,25 +31,7 @@ export default function RootLayout({
  return (
   <html lang="en" suppressHydrationWarning>
    <body className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-mono)] antialiased`}>
-    <ThemeProvider
-     enableColorScheme
-     enableSystem={false}
-     disableTransitionOnChange
-     defaultTheme="dark-orange"
-     themes={[
-      // prettier
-      "light-orange",
-      "dark-orange",
-      "light-yellow",
-      "dark-yellow",
-      "light-green",
-      "dark-green",
-      "light-purple",
-      "dark-purple",
-      "light-red",
-      "dark-red",
-     ]}
-    >
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange enableColorScheme>
      <FullScreen />
      <SocketStatus />
      <ThemeSwitcher />

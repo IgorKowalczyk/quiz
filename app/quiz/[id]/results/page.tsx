@@ -37,7 +37,7 @@ export default async function Page(props: { params: Promise<{ id: string }>; sea
     <>
      <PartyPopper className="mx-0 size-12 rounded-full border p-3 md:size-16 md:p-4" />
      <h1 className="text-center text-lg md:text-2xl">Quiz ended!</h1>
-     <p className="mb-4 text-center text-muted-foreground">Final results are in! 🎉</p>
+     <p className="text-muted-foreground mb-4 text-center">Final results are in! 🎉</p>
 
      <QuizChart quizMembers={quizMembers} />
      {!auth && full && (
@@ -52,7 +52,7 @@ export default async function Page(props: { params: Promise<{ id: string }>; sea
      <PartyPopper className="mx-0 size-12 rounded-full border p-3 md:size-16 md:p-4" />
 
      <h1 className="text-center text-lg md:text-2xl">You finished the quiz!</h1>
-     <p className="mb-4 text-center text-muted-foreground">
+     <p className="text-muted-foreground mb-4 text-center">
       You scored
       <span className="font-bold"> {member.score} </span>
       points! You are ranked <span className="font-bold"> {rank} </span> out of <span className="font-bold"> {quizMembers.length} </span> players! 🎉

@@ -69,7 +69,7 @@ export default function QuizMembers({ quizId }: { quizId: string }) {
  return (
   <div className="flex flex-col space-y-4">
    {members.length === 0 ? (
-    <span className="flex items-center gap-2 text-muted-foreground">
+    <span className="text-muted-foreground flex items-center gap-2">
      <RefreshCw className="size-4 shrink-0 animate-spin" /> Waiting for other players to join...
     </span>
    ) : (
@@ -96,7 +96,7 @@ export default function QuizMembers({ quizId }: { quizId: string }) {
      <TooltipProvider delayDuration={100}>
       <Tooltip>
        <TooltipTrigger asChild>
-        <div className="ml-auto px-4 py-2 duration-200 hover:text-destructive" onClick={() => handleKick(member.userId)}>
+        <div className="hover:text-destructive ml-auto px-4 py-2 duration-200" onClick={() => handleKick(member.userId)}>
          <MinusIcon className="size-4" />
         </div>
        </TooltipTrigger>

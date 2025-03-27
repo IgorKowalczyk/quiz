@@ -55,7 +55,7 @@ export function QuizCodeInput() {
     </InputOTPGroup>
    </InputOTP>
 
-   {quizExists === false && <p className="mt-4 text-sm text-destructive">Quiz not found! Please check the code and try again.</p>}
+   {quizExists === false && <p className="text-destructive mt-4 text-sm">Quiz not found! Please check the code and try again.</p>}
   </div>
  );
 }

@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
  eslint: {
   ignoreDuringBuilds: true,
  },
+ devIndicators: {
+  position: "bottom-right",
+ },
 
  /* eslint-disable require-await */
  async headers() {

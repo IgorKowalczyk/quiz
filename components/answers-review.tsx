@@ -54,11 +54,11 @@ export function AnswersReview({ memberAnswers, quizId, auth }: { memberAnswers: 
   <>
    <PlayIcon className="mx-0 size-12 rounded-full border p-3 md:size-16 md:p-4" />
    <h1 className="text-center text-lg md:text-2xl">Answers Review</h1>
-   <p className="mb-4 text-center text-muted-foreground">Good round! Here are the answers from the members.</p>
+   <p className="text-muted-foreground mb-4 text-center">Good round! Here are the answers from the members.</p>
    <QuizChart quizMembers={memberAnswers} />
    <Button className="mx-auto mt-4" onClick={() => socket.emit("nextQuestion", { quizId, auth })}>
     Next Question
-    <ArrowRightIcon className="ml-2 size-4" />
+    <ArrowRightIcon className="size-4" />
    </Button>
   </>
  );

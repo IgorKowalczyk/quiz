@@ -33,7 +33,7 @@ export default function FullScreen() {
  };
 
  return (
-  <div className={cn("fixed right-0 top-0 m-4 cursor-pointer", buttonVariants({ variant: "ghost", size: "icon" }))} onClick={toggleFullscreen}>
+  <div className={cn("fixed top-0 right-0 m-4 cursor-pointer", buttonVariants({ variant: "ghost", size: "icon" }))} onClick={toggleFullscreen}>
    {isFullscreen ? <MinimizeIcon /> : <ExpandIcon />}
   </div>
  );

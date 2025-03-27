@@ -8,7 +8,7 @@ export default function Page() {
   <>
    <PlayIcon className="mx-0 size-12 rounded-full border p-3 md:size-16 md:p-4" />
    <h1 className="text-center text-lg md:text-2xl">To get started enter the quiz code</h1>
-   <p className="mb-4 text-center text-muted-foreground">Enter the 6-digit code to join the quiz.</p>
+   <p className="text-muted-foreground mb-4 text-center">Enter the 6-digit code to join the quiz.</p>
 
    <QuizCodeInput />
 
