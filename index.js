@@ -31,7 +31,7 @@ app.engine("html", ejs.renderFile);
 app.set("view engine", "html");
 
 // app.use(express.static("static"));
-app.use("/static", express.static(path.join(__dirname + "/static")));
+app.use("/static", express.static(path.resolve("./static")));
 app.use(compression());
 
 const renderTemplate = (res, req, template, data = {}) => {

@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Math quiz game",
   "author": "Igor Kowalczyk",
-  "type": "commonjs",
+  "type": "module",
   "main": "node index.js",
   "scripts": {
     "dev": "nodemon index.js",
