@@ -30,7 +30,8 @@ console.log(Logger("info", `Max questions: ${config.max_questions}`));
 app.engine("html", ejs.renderFile);
 app.set("view engine", "html");
 
-app.use(express.static("static"));
+// app.use(express.static("static"));
+app.use("/static", express.static(path.join(__dirname + "/static")));
 app.use(compression());
 
 const renderTemplate = (res, req, template, data = {}) => {
