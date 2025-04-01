@@ -8,6 +8,77 @@ importers:
 
   .:
     dependencies:
+      '@igorkowalczyk/prettier-config':
+        specifier: 3.0.7
+        version: 3.0.7(prettier@3.5.3)(rollup@4.38.0)(tslib@2.8.1)(typescript@5.8.2)
+      dotenv:
+        specifier: 16.4.7
+        version: 16.4.7
+      prettier:
+        specifier: 3.5.3
+        version: 3.5.3
+      turbo:
+        specifier: 2.4.4
+        version: 2.4.4
+      typescript:
+        specifier: 5.8.2
+        version: 5.8.2
+    devDependencies:
+      prettier-plugin-tailwindcss:
+        specifier: 0.6.11
+        version: 0.6.11(prettier@3.5.3)
+
+  apps/backend:
+    dependencies:
+      '@repo/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
+      cors:
+        specifier: 2.8.5
+        version: 2.8.5
+      express:
+        specifier: 5.1.0
+        version: 5.1.0
+      morgan:
+        specifier: 1.10.0
+        version: 1.10.0
+      socket.io:
+        specifier: 4.8.1
+        version: 4.8.1
+      socket.io-client:
+        specifier: 4.8.1
+        version: 4.8.1
+      tsx:
+        specifier: 4.19.3
+        version: 4.19.3
+      zod:
+        specifier: 3.24.2
+        version: 3.24.2
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@types/cors':
+        specifier: 2.8.17
+        version: 2.8.17
+      '@types/express':
+        specifier: 5.0.1
+        version: 5.0.1
+      '@types/morgan':
+        specifier: 1.9.9
+        version: 1.9.9
+      eslint:
+        specifier: 9.23.0
+        version: 9.23.0(jiti@2.4.2)
+      typescript:
+        specifier: 5.8.2
+        version: 5.8.2
+
+  apps/www:
+    dependencies:
       '@hookform/resolvers':
         specifier: 5.0.0
         version: 5.0.0(react-hook-form@7.55.0(react@19.1.0))
@@ -92,24 +163,15 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: 1.1.8
         version: 1.1.8(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@repo/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       '@types/canvas-confetti':
         specifier: 1.9.0
         version: 1.9.0
-      '@types/cors':
-        specifier: 2.8.17
-        version: 2.8.17
-      '@types/express':
-        specifier: 5.0.1
-        version: 5.0.1
-      '@types/morgan':
-        specifier: 1.9.9
-        version: 1.9.9
       canvas-confetti:
         specifier: 1.9.3
         version: 1.9.3
-      chalk:
-        specifier: 5.4.1
-        version: 5.4.1
       class-variance-authority:
         specifier: 0.7.1
         version: 0.7.1
@@ -119,42 +181,24 @@ importers:
       cmdk:
         specifier: 1.1.1
         version: 1.1.1(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      cors:
-        specifier: 2.8.5
-        version: 2.8.5
       date-fns:
         specifier: 4.1.0
         version: 4.1.0
-      dotenv:
-        specifier: 16.4.7
-        version: 16.4.7
       embla-carousel-react:
         specifier: 8.5.2
         version: 8.5.2(react@19.1.0)
-      express:
-        specifier: 5.1.0
-        version: 5.1.0
       input-otp:
         specifier: 1.4.2
         version: 1.4.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       lucide-react:
         specifier: 0.486.0
         version: 0.486.0(react@19.1.0)
-      morgan:
-        specifier: 1.10.0
-        version: 1.10.0
       next:
         specifier: 15.2.4
         version: 15.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next-themes:
         specifier: 0.4.6
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
-      prettier-plugin-tailwindcss:
-        specifier: ^0.6.11
-        version: 0.6.11(prettier@3.5.3)
       qrcode:
         specifier: 1.5.4
         version: 1.5.4
@@ -176,9 +220,6 @@ importers:
       recharts:
         specifier: 2.15.1
         version: 2.15.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      redis:
-        specifier: 4.7.0
-        version: 4.7.0
       socket.io:
         specifier: 4.8.1
         version: 4.8.1
@@ -194,30 +235,21 @@ importers:
       tailwindcss-animate:
         specifier: 1.0.7
         version: 1.0.7(tailwindcss@4.0.17)
-      tsx:
-        specifier: 4.19.3
-        version: 4.19.3
       tw-animate-css:
         specifier: 1.2.5
         version: 1.2.5
       vaul:
         specifier: 1.1.2
         version: 1.1.2(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      zod:
-        specifier: 3.24.2
-        version: 3.24.2
-      zod-validation-error:
-        specifier: 3.4.0
-        version: 3.4.0(zod@3.24.2)
     devDependencies:
-      '@igorkowalczyk/eslint-config':
-        specifier: 3.0.7
-        version: 3.0.7(@types/eslint@9.6.1)(eslint@9.23.0(jiti@2.4.2))(prettier@3.5.3)(ts-api-utils@2.1.0(typescript@5.8.2))(typescript@5.8.2)
-      '@igorkowalczyk/prettier-config':
-        specifier: 3.0.7
-        version: 3.0.7(prettier@3.5.3)(rollup@4.38.0)(tslib@2.8.1)(typescript@5.8.2)
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       '@tailwindcss/postcss':
-        specifier: ^4.0.17
+        specifier: 4.0.17
         version: 4.0.17
       '@types/node':
         specifier: 22.13.16
@@ -243,6 +275,48 @@ importers:
       typescript:
         specifier: 5.8.2
         version: 5.8.2
+
+  packages/eslint-config:
+    dependencies:
+      '@eslint/js':
+        specifier: 9.23.0
+        version: 9.23.0
+      '@igorkowalczyk/eslint-config':
+        specifier: 3.0.7
+        version: 3.0.7(@types/eslint@9.6.1)(eslint@9.23.0(jiti@2.4.2))(prettier@3.5.3)(ts-api-utils@2.1.0(typescript@5.8.2))(typescript@5.8.2)
+      '@next/eslint-plugin-next':
+        specifier: 15.2.1
+        version: 15.2.1
+      eslint:
+        specifier: 9.23.0
+        version: 9.23.0(jiti@2.4.2)
+      eslint-plugin-turbo:
+        specifier: 2.4.4
+        version: 2.4.4(eslint@9.23.0(jiti@2.4.2))(turbo@2.4.4)
+
+  packages/typescript-config: {}
+
+  packages/utils:
+    dependencies:
+      chalk:
+        specifier: 5.4.1
+        version: 5.4.1
+      redis:
+        specifier: 4.7.0
+        version: 4.7.0
+      zod:
+        specifier: 3.24.2
+        version: 3.24.2
+      zod-validation-error:
+        specifier: 3.4.0
+        version: 3.4.0(zod@3.24.2)
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@types/node':
+        specifier: 22.13.16
+        version: 22.13.16
 
 packages:
 
@@ -2448,6 +2522,10 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
+  dotenv@16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
@@ -2692,6 +2770,12 @@ packages:
         optional: true
       typescript:
         optional: true
+
+  eslint-plugin-turbo@2.4.4:
+    resolution: {integrity: sha512-myEnQTjr3FkI0j1Fu0Mqnv1z8n0JW5iFTOUNzHaEevjzl+1uzMSsFwks/x8i3rGmI3EYtC1BY8K2B2pS0Vfx6w==}
+    peerDependencies:
+      eslint: '>6.6.0'
+      turbo: '>2.0.0'
 
   eslint-scope@8.3.0:
     resolution: {integrity: sha512-pUNxi75F8MJ/GdeKtVLSbYg4ZI34J6C0C7sbL4YOp2exGwen7ZsuBqKzUhXd0qMQ362yET3z+uPwKeg/0C2XCQ==}
@@ -4164,6 +4248,40 @@ packages:
   tsx@4.19.3:
     resolution: {integrity: sha512-4H8vUNGNjQ4V2EOoGw005+c+dGuPSnhpPBPHBtsZdGZBk/iJb4kguGlPWaZTZ3q5nMtFOEsY0nRDlh9PJyd6SQ==}
     engines: {node: '>=18.0.0'}
+    hasBin: true
+
+  turbo-darwin-64@2.4.4:
+    resolution: {integrity: sha512-5kPvRkLAfmWI0MH96D+/THnDMGXlFNmjeqNRj5grLKiry+M9pKj3pRuScddAXPdlxjO5Ptz06UNaOQrrYGTx1g==}
+    cpu: [x64]
+    os: [darwin]
+
+  turbo-darwin-arm64@2.4.4:
+    resolution: {integrity: sha512-/gtHPqbGQXDFhrmy+Q/MFW2HUTUlThJ97WLLSe4bxkDrKHecDYhAjbZ4rN3MM93RV9STQb3Tqy4pZBtsd4DfCw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  turbo-linux-64@2.4.4:
+    resolution: {integrity: sha512-SR0gri4k0bda56hw5u9VgDXLKb1Q+jrw4lM7WAhnNdXvVoep4d6LmnzgMHQQR12Wxl3KyWPbkz9d1whL6NTm2Q==}
+    cpu: [x64]
+    os: [linux]
+
+  turbo-linux-arm64@2.4.4:
+    resolution: {integrity: sha512-COXXwzRd3vslQIfJhXUklgEqlwq35uFUZ7hnN+AUyXx7hUOLIiD5NblL+ETrHnhY4TzWszrbwUMfe2BYWtaPQg==}
+    cpu: [arm64]
+    os: [linux]
+
+  turbo-windows-64@2.4.4:
+    resolution: {integrity: sha512-PV9rYNouGz4Ff3fd6sIfQy5L7HT9a4fcZoEv8PKRavU9O75G7PoDtm8scpHU10QnK0QQNLbE9qNxOAeRvF0fJg==}
+    cpu: [x64]
+    os: [win32]
+
+  turbo-windows-arm64@2.4.4:
+    resolution: {integrity: sha512-403sqp9t5sx6YGEC32IfZTVWkRAixOQomGYB8kEc6ZD+//LirSxzeCHCnM8EmSXw7l57U1G+Fb0kxgTcKPU/Lg==}
+    cpu: [arm64]
+    os: [win32]
+
+  turbo@2.4.4:
+    resolution: {integrity: sha512-N9FDOVaY3yz0YCOhYIgOGYad7+m2ptvinXygw27WPLQvcZDl3+0Sa77KGVlLSiuPDChOUEnTKE9VJwLSi9BPGQ==}
     hasBin: true
 
   tw-animate-css@1.2.5:
@@ -6521,6 +6639,8 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
+  dotenv@16.0.3: {}
+
   dotenv@16.4.7: {}
 
   dunder-proto@1.0.1:
@@ -6964,6 +7084,12 @@ snapshots:
       typescript: 5.8.2
     transitivePeerDependencies:
       - supports-color
+
+  eslint-plugin-turbo@2.4.4(eslint@9.23.0(jiti@2.4.2))(turbo@2.4.4):
+    dependencies:
+      dotenv: 16.0.3
+      eslint: 9.23.0(jiti@2.4.2)
+      turbo: 2.4.4
 
   eslint-scope@8.3.0:
     dependencies:
@@ -8495,6 +8621,33 @@ snapshots:
       get-tsconfig: 4.10.0
     optionalDependencies:
       fsevents: 2.3.3
+
+  turbo-darwin-64@2.4.4:
+    optional: true
+
+  turbo-darwin-arm64@2.4.4:
+    optional: true
+
+  turbo-linux-64@2.4.4:
+    optional: true
+
+  turbo-linux-arm64@2.4.4:
+    optional: true
+
+  turbo-windows-64@2.4.4:
+    optional: true
+
+  turbo-windows-arm64@2.4.4:
+    optional: true
+
+  turbo@2.4.4:
+    optionalDependencies:
+      turbo-darwin-64: 2.4.4
+      turbo-darwin-arm64: 2.4.4
+      turbo-linux-64: 2.4.4
+      turbo-linux-arm64: 2.4.4
+      turbo-windows-64: 2.4.4
+      turbo-windows-arm64: 2.4.4
 
   tw-animate-css@1.2.5: {}
 

@@ -1,0 +1,18 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./base": "./base.ts",
+    "./next": "./next.ts"
+  },
+  "dependencies": {
+    "@igorkowalczyk/eslint-config": "3.0.7",
+    "@next/eslint-plugin-next": "15.2.1",
+    "eslint": "9.23.0",
+    "@eslint/js": "9.23.0",
+    "eslint-plugin-turbo": "2.4.4"
+  },
+    "packageManager": "pnpm@10.7.1"
+}
