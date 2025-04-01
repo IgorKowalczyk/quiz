@@ -87,7 +87,7 @@
     "@igorkowalczyk/eslint-config": "3.0.7",
     "@igorkowalczyk/prettier-config": "3.0.7",
     "@tailwindcss/postcss": "^4.0.0",
-    "@types/node": "22.13.11",
+    "@types/node": "22.13.15",
     "@types/qrcode": "1.5.5",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
