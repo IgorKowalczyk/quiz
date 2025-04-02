@@ -71,21 +71,28 @@ export default function CreateQuizPage() {
   }
 
   const result = quiz.safeParse(data);
+
   if (!result.success) {
    const error = errorParser(result.error.issues);
    return toast.error(error);
   }
 
   const loadingToast = toast.loading("Creating quiz...");
-  const createdQuiz = await createQuiz(data);
-  if (createdQuiz.error) return toast.error(createdQuiz.error, { id: loadingToast });
-  if (!createdQuiz.quiz)
-   return toast.error("An error occurred while creating the quiz.", {
+  try {
+   const createdQuiz = await createQuiz(data);
+   if (createdQuiz.error) return toast.error(createdQuiz.error, { id: loadingToast });
+   if (!createdQuiz.quiz)
+    return toast.error("An error occurred while creating the quiz.", {
+     id: loadingToast,
+    });
+
+   toast.success("Quiz created!", { id: loadingToast });
+   router.push(`/join/${createdQuiz.quiz.id}?auth=${createdQuiz.quiz.auth}`);
+  } catch {
+   toast.error("An error occurred while creating the quiz.", {
     id: loadingToast,
    });
-
-  toast.success("Quiz created!", { id: loadingToast });
-  router.push(`/join/${createdQuiz.quiz.id}?auth=${createdQuiz.quiz.auth}`);
+  }
  };
 
  const handleImport = () => {
