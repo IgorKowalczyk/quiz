@@ -6,32 +6,38 @@ import { errorParser } from "./utils";
 import { CreatedQuiz, quiz, Quiz, QuizMember } from "./validators/quiz";
 
 export async function createQuiz(inputQuiz: Quiz) {
- const parsedQuiz = quiz.safeParse(inputQuiz);
+ try {
+  const parsedQuiz = quiz.safeParse(inputQuiz);
 
- const client = getClient();
+  const client = getClient();
 
- if (parsedQuiz.success) {
-  const quizId = Math.floor(100000 + Math.random() * 900000).toString();
-  const quizAuth = crypto.randomUUID();
-  await client.json.set(`quiz:${quizId}:data`, "$", {
-   ...parsedQuiz.data,
-   started: false,
-   ended: false,
-   auth: quizAuth,
-   currentQuestion: 0,
-   isOnAnswer: false,
-  });
-  await client.expire(`quiz:${quizId}:data`, 960);
-
-  return {
-   quiz: {
-    id: quizId,
+  if (parsedQuiz.success) {
+   const quizId = Math.floor(100000 + Math.random() * 900000).toString();
+   const quizAuth = crypto.randomUUID();
+   await client.json.set(`quiz:${quizId}:data`, "$", {
+    ...parsedQuiz.data,
+    started: false,
+    ended: false,
     auth: quizAuth,
-   },
-  };
- } else {
+    currentQuestion: 0,
+    isOnAnswer: false,
+   });
+   await client.expire(`quiz:${quizId}:data`, 960);
+
+   return {
+    quiz: {
+     id: quizId,
+     auth: quizAuth,
+    },
+   };
+  } else {
+   return {
+    error: errorParser(parsedQuiz.error.issues),
+   };
+  }
+ } catch (error) {
   return {
-   error: errorParser(parsedQuiz.error.issues),
+   error: "An error occurred while creating the quiz. Please try again.",
   };
  }
 }
