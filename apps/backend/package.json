@@ -29,7 +29,7 @@
   "@types/express": "5.0.1",
   "@types/morgan": "1.9.9",
   "eslint": "9.23.0",
-  "typescript": "5.8.2"
+  "typescript": "5.8.3"
  },
  "packageManager": "pnpm@10.7.1"
 }
