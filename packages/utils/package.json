@@ -20,5 +20,5 @@
     "@repo/typescript-config": "workspace:*",
     "@types/node": "22.14.0"
   },
-  "packageManager": "pnpm@10.7.1"
+  "packageManager": "pnpm@10.8.0"
 }
