@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@igorkowalczyk/eslint-config": "3.0.7",
-    "@next/eslint-plugin-next": "15.3.0",
+    "@next/eslint-plugin-next": "15.3.1",
     "eslint": "9.24.0",
     "@eslint/js": "9.24.0",
     "eslint-plugin-turbo": "2.5.0"
