@@ -13,7 +13,7 @@
     "@igorkowalczyk/prettier-config": "3.0.7",
     "dotenv": "16.5.0",
     "prettier": "3.5.3",
-    "turbo": "2.5.0",
+    "turbo": "2.5.2",
     "typescript": "5.8.3"
   },
   "packageManager": "pnpm@10.8.1",
