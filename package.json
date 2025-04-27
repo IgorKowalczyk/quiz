@@ -10,7 +10,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
-    "@igorkowalczyk/prettier-config": "3.0.7",
+    "@igorkowalczyk/prettier-config": "3.0.8",
     "dotenv": "16.5.0",
     "prettier": "3.5.3",
     "turbo": "2.5.2",
