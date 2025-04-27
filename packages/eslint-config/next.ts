@@ -1,12 +1,12 @@
 import base from "./base";
-import { Linter } from "eslint";
 import eslintConfig from "@igorkowalczyk/eslint-config";
+import { defineConfig } from "eslint/config";
 
-export default [
+export default defineConfig([
  // prettier
- ...base,
- ...eslintConfig.next,
- ...eslintConfig.react,
+ base,
+ eslintConfig.next,
+ eslintConfig.react,
  {
   name: "Override",
   ignores: ["/components/ui/**/*"],
@@ -23,4 +23,4 @@ export default [
    "typescript/no-empty-object-type": "off",
   },
  },
-] satisfies Linter.Config[];
+]);

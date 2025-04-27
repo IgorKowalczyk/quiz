@@ -1,11 +1,11 @@
 import eslintConfig from "@igorkowalczyk/eslint-config";
-import { Linter } from "eslint";
 import turboPlugin from "eslint-plugin-turbo";
+import { defineConfig } from "eslint/config";
 
-export default [
+export default defineConfig([
  // prettier
- ...eslintConfig.base,
- ...eslintConfig.typescript,
+ eslintConfig.base,
+ eslintConfig.typescript,
  {
   plugins: {
    turbo: turboPlugin,
@@ -14,5 +14,5 @@ export default [
    "turbo/no-undeclared-env-vars": "warn",
   },
  },
- ...eslintConfig.prettier,
-] satisfies Linter.Config[];
+ eslintConfig.prettier,
+]);
