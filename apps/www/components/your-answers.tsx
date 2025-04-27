@@ -1,12 +1,12 @@
 "use client";
 
+import { QuizMember } from "@repo/utils/validators/quiz";
 import { CheckIcon, XIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { toast } from "sonner";
 import Confetti from "@/components/confetti";
 import { socket } from "@/lib/socket";
-import { QuizMember } from "@repo/utils/validators/quiz";
 
 export function YourAnswers({ quizId, member }: { quizId: string; member: QuizMember }) {
  const router = useRouter();

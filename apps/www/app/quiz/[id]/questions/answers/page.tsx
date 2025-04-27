@@ -1,8 +1,8 @@
+import { checkQuiz, getMembers } from "@repo/utils/actions";
 import { redirect } from "next/navigation";
 import { AnswersReview } from "@/components/answers-review";
 import Confetti from "@/components/confetti";
 import { YourAnswers } from "@/components/your-answers";
-import { checkQuiz, getMembers } from "@repo/utils/actions";
 
 export default async function Page(props: { params: Promise<{ id: string }>; searchParams: Promise<{ auth?: string; userId?: string }> }) {
  const searchParams = await props.searchParams;

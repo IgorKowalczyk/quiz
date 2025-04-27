@@ -1,5 +1,6 @@
 "use client";
 
+import { QuizMember } from "@repo/utils/validators/quiz";
 import { MinusIcon, RefreshCw } from "lucide-react";
 import { PlayIcon } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -9,7 +10,6 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { socket } from "@/lib/socket";
-import { QuizMember } from "@repo/utils/validators/quiz";
 
 export default function QuizMembers({ quizId }: { quizId: string }) {
  const [members, setMembers] = useState<QuizMember[]>([]);

@@ -1,10 +1,10 @@
 "use client";
 
+import { checkQuiz } from "@repo/utils/actions";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
 import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "@/components/ui/input-otp";
-import { checkQuiz } from "@repo/utils/actions";
 
 export function QuizCodeInput() {
  const [code, setCode] = useState("");

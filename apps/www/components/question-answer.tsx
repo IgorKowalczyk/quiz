@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { socket } from "@/lib/socket";
 import { cn } from "@/lib/cn";
+import { socket } from "@/lib/socket";
 
 interface Question {
  question: string;

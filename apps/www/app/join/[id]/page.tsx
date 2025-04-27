@@ -1,11 +1,11 @@
+import { checkQuiz } from "@repo/utils/actions";
+import { quizId } from "@repo/utils/validators/quiz";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import QRCode from "qrcode";
 import QuizMembers from "@/components/quiz-members";
 import { Separator } from "@/components/ui/separator";
-import { checkQuiz } from "@repo/utils/actions";
-import { quizId } from "@repo/utils/validators/quiz";
 
 export default async function Page(props: { params: Promise<{ id: string }>; searchParams: Promise<{ auth?: string }> }) {
  const searchParams = await props.searchParams;

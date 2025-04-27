@@ -1,6 +1,6 @@
+import { checkQuiz, getQuiz } from "@repo/utils/actions";
 import { redirect } from "next/navigation";
 import QuestionDisplay from "@/components/question-display";
-import { checkQuiz, getQuiz } from "@repo/utils/actions";
 
 export default async function Page(props: { params: Promise<{ id: string }>; searchParams: Promise<{ auth?: string }> }) {
  const searchParams = await props.searchParams;

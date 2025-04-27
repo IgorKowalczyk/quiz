@@ -1,10 +1,10 @@
+import { checkQuiz, getMembers } from "@repo/utils/actions";
 import { ListCheckIcon, PartyPopper, PlusIcon } from "lucide-react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import Confetti from "@/components/confetti";
 import { QuizChart } from "@/components/quiz-chart";
 import { buttonVariants } from "@/components/ui/button";
-import { checkQuiz, getMembers } from "@repo/utils/actions";
 
 export default async function Page(props: { params: Promise<{ id: string }>; searchParams: Promise<{ auth?: string; userId?: string; full?: boolean }> }) {
  const searchParams = await props.searchParams;

@@ -1,12 +1,14 @@
 import base from "./base";
 import eslintConfig from "@igorkowalczyk/eslint-config";
-import { defineConfig } from "eslint/config";
+import { defineConfig, globalIgnores } from "eslint/config";
 
 export default defineConfig([
  // prettier
  base,
  eslintConfig.next,
  eslintConfig.react,
+ globalIgnores([".next/**"], "Ignore next.js build files"),
+ globalIgnores(["components/ui/**"], "Ignore components/ui directory"),
  {
   name: "Override",
   ignores: ["/components/ui/**/*"],

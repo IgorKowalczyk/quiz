@@ -1,5 +1,6 @@
 "use client";
 
+import { QuizMember } from "@repo/utils/validators/quiz";
 import { ArrowRightIcon, History } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -7,7 +8,6 @@ import { toast } from "sonner";
 import { QuizChart } from "@/components/quiz-chart";
 import { Button } from "@/components/ui/button";
 import { socket } from "@/lib/socket";
-import { QuizMember } from "@repo/utils/validators/quiz";
 
 export function AnswersReview({ memberAnswers, quizId, auth }: { memberAnswers: QuizMember[]; quizId: string; auth: string }) {
  const router = useRouter();

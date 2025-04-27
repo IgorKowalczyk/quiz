@@ -1,6 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { userIdSchema, userNameSchema, UserName } from "@repo/utils/validators/quiz";
 import { LogOutIcon, PlayIcon, RotateCw } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
@@ -11,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import { Form, FormItem, FormLabel, FormControl, FormMessage, FormField, FormDescription } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { socket } from "@/lib/socket";
-import { userIdSchema, userNameSchema, UserName } from "@repo/utils/validators/quiz";
 
 export default function QuizJoin({ quizId }: { quizId: string }) {
  const [isJoined, setIsJoined] = useState<boolean>(false);
