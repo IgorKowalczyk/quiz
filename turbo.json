@@ -4,7 +4,7 @@
  "tasks": {
   "build": {
    "dependsOn": ["^build"],
-   "env": ["NEXT_PUBLIC_APP_URL", "NEXT_PUBLIC_SOCKET_URL"],
+   "env": ["NEXT_PUBLIC_APP_URL", "NEXT_PUBLIC_SOCKET_URL", "PORT", "NODE_ENV"],
    "inputs": ["$TURBO_DEFAULT$", ".env*"],
    "outputs": [".next/**", "!.next/cache/**"]
   },
@@ -17,7 +17,7 @@
   "dev": {
    "cache": false,
    "persistent": true,
-   "env": ["NEXT_PUBLIC_APP_URL", "NEXT_PUBLIC_SOCKET_URL"],
+   "env": ["NEXT_PUBLIC_APP_URL", "NEXT_PUBLIC_SOCKET_URL", "PORT", "NODE_ENV"],
    "inputs": ["$TURBO_DEFAULT$", ".env*"]
   }
  }
