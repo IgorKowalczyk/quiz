@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "chalk": "5.4.1",
-    "redis": "4.7.0",
+    "redis": "5.0.0",
     "zod": "3.24.3",
     "zod-validation-error": "3.4.0"
   },
