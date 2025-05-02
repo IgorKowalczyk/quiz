@@ -10,8 +10,8 @@
   "dependencies": {
     "@igorkowalczyk/eslint-config": "3.0.8",
     "@next/eslint-plugin-next": "15.3.1",
-    "eslint": "9.25.1",
-    "@eslint/js": "9.25.1",
+    "eslint": "9.26.0",
+    "@eslint/js": "9.26.0",
     "eslint-plugin-turbo": "2.5.2"
   },
     "packageManager": "pnpm@10.10.0"
