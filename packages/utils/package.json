@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "22.15.3"
+    "@types/node": "22.15.12"
   },
   "packageManager": "pnpm@10.10.0"
 }
