@@ -71,14 +71,14 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@tailwindcss/postcss": "4.1.6",
+    "@tailwindcss/postcss": "4.1.7",
     "@types/node": "22.15.18",
     "@types/qrcode": "1.5.5",
     "@types/react": "19.1.4",
     "@types/react-dom": "19.1.5",
     "eslint": "9.26.0",
     "postcss": "8.5.3",
-    "tailwindcss": "4.1.6",
+    "tailwindcss": "4.1.7",
     "typescript": "5.8.3"
   },
   "packageManager": "pnpm@10.11.0"
