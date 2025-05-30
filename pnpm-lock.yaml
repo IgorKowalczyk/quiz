@@ -52,8 +52,8 @@ importers:
         specifier: 4.19.4
         version: 4.19.4
       zod:
-        specifier: 3.25.36
-        version: 3.25.36
+        specifier: 3.25.42
+        version: 3.25.42
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -305,11 +305,11 @@ importers:
         specifier: 5.1.1
         version: 5.1.1
       zod:
-        specifier: 3.25.36
-        version: 3.25.36
+        specifier: 3.25.42
+        version: 3.25.42
       zod-validation-error:
         specifier: 3.4.1
-        version: 3.4.1(zod@3.25.36)
+        version: 3.4.1(zod@3.25.42)
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
@@ -3948,8 +3948,8 @@ packages:
     peerDependencies:
       zod: ^3.24.4
 
-  zod@3.25.36:
-    resolution: {integrity: sha512-eRFS3i8T0IrpGdL8HQyqFAugGOn7jOjyGgGdtv5NY4Wkhi7lJDk732bNZ609YMIGFbLoaj6J69O1Mura23gfIw==}
+  zod@3.25.42:
+    resolution: {integrity: sha512-PcALTLskaucbeHc41tU/xfjfhcz8z0GdhhDcSgrCTmSazUuqnYqiXO63M0QUBVwpBlsLsNVn5qHSC5Dw3KZvaQ==}
 
 snapshots:
 
@@ -7845,8 +7845,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-validation-error@3.4.1(zod@3.25.36):
+  zod-validation-error@3.4.1(zod@3.25.42):
     dependencies:
-      zod: 3.25.36
+      zod: 3.25.42
 
-  zod@3.25.36: {}
+  zod@3.25.42: {}
