@@ -27,7 +27,7 @@
   "@repo/typescript-config": "workspace:*",
   "@types/cors": "2.8.18",
   "@types/express": "5.0.2",
-  "@types/morgan": "1.9.9",
+  "@types/morgan": "1.9.10",
   "eslint": "9.27.0",
   "typescript": "5.8.3"
  },
