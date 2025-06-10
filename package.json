@@ -19,6 +19,6 @@
   },
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
-    "prettier-plugin-tailwindcss": "0.6.11"
+    "prettier-plugin-tailwindcss": "0.6.12"
   }
 }
