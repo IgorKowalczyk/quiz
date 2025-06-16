@@ -13,7 +13,7 @@
   "dependencies": {
     "chalk": "5.4.1",
     "redis": "5.5.6",
-    "zod": "3.25.61",
+    "zod": "3.25.67",
     "zod-validation-error": "3.5.1"
   },
   "devDependencies": {
