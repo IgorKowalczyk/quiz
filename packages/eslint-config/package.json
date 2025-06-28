@@ -8,7 +8,7 @@
     "./next": "./next.ts"
   },
   "dependencies": {
-    "@igorkowalczyk/eslint-config": "3.0.8",
+    "@igorkowalczyk/eslint-config": "3.1.0",
     "@next/eslint-plugin-next": "15.3.4",
     "eslint": "9.29.0",
     "@eslint/js": "9.29.0",
