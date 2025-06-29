@@ -1,7 +1,7 @@
 "use client";
 
-import * as LabelPrimitive from "@radix-ui/react-label";
-import { Slot } from "@radix-ui/react-slot";
+import { Label as LabelPrimitive, Slot as SlotPrimitive } from "radix-ui";
+
 import * as React from "react";
 import { Controller, FormProvider, useFormContext, useFormState, type ControllerProps, type FieldPath, type FieldValues } from "react-hook-form";
 import { Label } from "@/components/ui/label";
@@ -70,11 +70,17 @@ function FormLabel({ className, ...props }: React.ComponentProps<typeof LabelPri
  return <Label data-slot="form-label" data-error={!!error} className={cn("data-[error=true]:text-destructive", className)} htmlFor={formItemId} {...props} />;
 }
 
-function FormControl({ ...props }: React.ComponentProps<typeof Slot>) {
+function FormControl({ ...props }: React.ComponentProps<typeof SlotPrimitive.Slot>) {
  const { error, formItemId, formDescriptionId, formMessageId } = useFormField();
 
  return (
-  <Slot data-slot="form-control" id={formItemId} aria-describedby={!error ? `${formDescriptionId}` : `${formDescriptionId} ${formMessageId}`} aria-invalid={!!error} {...props} />
+  <SlotPrimitive.Slot
+   data-slot="form-control"
+   id={formItemId}
+   aria-describedby={!error ? `${formDescriptionId}` : `${formDescriptionId} ${formMessageId}`}
+   aria-invalid={!!error}
+   {...props}
+  />
  );
 }
 
