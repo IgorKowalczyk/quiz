@@ -14,5 +14,5 @@
     "eslint": "9.30.0",
     "eslint-plugin-turbo": "2.5.4"
   },
-  "packageManager": "pnpm@10.12.3"
+  "packageManager": "pnpm@10.12.4"
 }
