@@ -1,4 +1,4 @@
-import { checkQuiz, getMembers } from "@repo/utils/actions";
+import { checkQuiz, getMembers } from "@igorkowalczyk/quiz-utils/actions";
 import { redirect } from "next/navigation";
 import { AnswersReview } from "@/components/answers-review";
 import Confetti from "@/components/confetti";

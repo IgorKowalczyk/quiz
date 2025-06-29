@@ -1,9 +1,9 @@
 import crypto from "node:crypto";
 import http from "node:http";
-import { getQuiz, getMembers, addMember, updateMembers, setIsOnAnswer, toggleStartQuiz, setCurrentQuestion } from "@repo/utils/actions";
-import { Logger } from "@repo/utils/logger";
-import getClient from "@repo/utils/redis";
-import { authSchema, joinOrRejoinQuiz, kickMember, quizId as quizIdValidator, QuizMember } from "@repo/utils/validators/quiz";
+import { getQuiz, getMembers, addMember, updateMembers, setIsOnAnswer, toggleStartQuiz, setCurrentQuestion } from "@igorkowalczyk/quiz-utils/actions";
+import { Logger } from "@igorkowalczyk/quiz-utils/logger";
+import getClient from "@igorkowalczyk/quiz-utils/redis";
+import { authSchema, joinOrRejoinQuiz, kickMember, quizId as quizIdValidator, QuizMember } from "@igorkowalczyk/quiz-utils/validators/quiz";
 import cors from "cors";
 import "dotenv/config";
 import express from "express";

@@ -1,6 +1,6 @@
 "use client";
 
-import { checkQuiz } from "@repo/utils/actions";
+import { checkQuiz } from "@igorkowalczyk/quiz-utils/actions";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";

@@ -1,5 +1,5 @@
-import { checkQuiz } from "@repo/utils/actions";
-import { quizId } from "@repo/utils/validators/quiz";
+import { checkQuiz } from "@igorkowalczyk/quiz-utils/actions";
+import { quizId } from "@igorkowalczyk/quiz-utils/validators/quiz";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";

@@ -1,9 +1,9 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { createQuiz } from "@repo/utils/actions";
-import { errorParser } from "@repo/utils/utils";
-import { quiz, Quiz } from "@repo/utils/validators/quiz";
+import { createQuiz } from "@igorkowalczyk/quiz-utils/actions";
+import { errorParser } from "@igorkowalczyk/quiz-utils/utils";
+import { quiz, Quiz } from "@igorkowalczyk/quiz-utils/validators/quiz";
 import { ChevronRightIcon, HomeIcon, ImportIcon, PlusIcon, SparklesIcon, TrashIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

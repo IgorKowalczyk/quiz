@@ -1,6 +1,6 @@
 "use client";
 
-import { QuizMember } from "@repo/utils/validators/quiz";
+import { QuizMember } from "@igorkowalczyk/quiz-utils/validators/quiz";
 import { CheckIcon, XIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";

@@ -1,6 +1,6 @@
 "use client";
 
-import { QuizMember } from "@repo/utils/validators/quiz";
+import { QuizMember } from "@igorkowalczyk/quiz-utils/validators/quiz";
 import { Bar, BarChart, CartesianGrid, LabelList, XAxis, YAxis } from "recharts";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";

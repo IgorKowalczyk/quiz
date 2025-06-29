@@ -1,4 +1,4 @@
-import { checkQuiz, getQuiz } from "@repo/utils/actions";
+import { checkQuiz, getQuiz } from "@igorkowalczyk/quiz-utils/actions";
 import { redirect } from "next/navigation";
 import QuestionDisplay from "@/components/question-display";
 

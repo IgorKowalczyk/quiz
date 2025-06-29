@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { userIdSchema, userNameSchema, UserName } from "@repo/utils/validators/quiz";
+import { userIdSchema, userNameSchema, UserName } from "@igorkowalczyk/quiz-utils/validators/quiz";
 import { LogOutIcon, PlayIcon, RotateCw } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";

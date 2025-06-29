@@ -1,6 +1,6 @@
 "use client";
 
-import { QuizMember } from "@repo/utils/validators/quiz";
+import { QuizMember } from "@igorkowalczyk/quiz-utils/validators/quiz";
 import { MinusIcon, RefreshCw } from "lucide-react";
 import { PlayIcon } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";

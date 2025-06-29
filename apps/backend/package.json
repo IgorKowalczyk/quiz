@@ -1,5 +1,5 @@
 {
- "name": "backend",
+ "name": "@igorkowalczyk/quiz-backend",
  "version": "0.0.0",
  "type": "module",
  "private": true,
@@ -13,7 +13,7 @@
   "format:check": "prettier --check ."
  },
  "dependencies": {
-  "@repo/utils": "workspace:*",
+  "@igorkowalczyk/quiz-utils": "workspace:*",
   "cors": "2.8.5",
   "express": "5.1.0",
   "morgan": "1.10.0",
@@ -23,8 +23,8 @@
   "zod": "3.25.67"
  },
  "devDependencies": {
-  "@repo/eslint-config": "workspace:*",
-  "@repo/typescript-config": "workspace:*",
+  "@igorkowalczyk/quiz-eslint-config": "workspace:*",
+  "@igorkowalczyk/quiz-typescript-config": "workspace:*",
   "@types/cors": "2.8.19",
   "@types/express": "5.0.3",
   "@types/morgan": "1.9.10",

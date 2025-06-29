@@ -1,5 +1,5 @@
 {
- "extends": "@repo/typescript-config/next.json",
+ "extends": "@igorkowalczyk/quiz-typescript-config/next.json",
  "compilerOptions": {
   "plugins": [
    {

@@ -1,4 +1,4 @@
-import { checkQuiz, getMembers } from "@repo/utils/actions";
+import { checkQuiz, getMembers } from "@igorkowalczyk/quiz-utils/actions";
 import { ListCheckIcon, PartyPopper, PlusIcon } from "lucide-react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
