@@ -78,7 +78,12 @@ export default function QuestionAnswer({ userId, quizId }: { userId: string; qui
  };
 
  const icons = [TriangleIcon, DiamondIcon, CircleIcon, SquareIcon];
- const colors = ["bg-button-triangle! hover:bg-button-triangle/80!", "bg-button-diamond hover:bg-button-diamond/80", "bg-button-circle hover:bg-button-circle/80", "bg-button-square hover:bg-button-square/80"];
+ const colors = [
+  "bg-button-triangle! hover:bg-button-triangle/80!",
+  "bg-button-diamond hover:bg-button-diamond/80",
+  "bg-button-circle hover:bg-button-circle/80",
+  "bg-button-square hover:bg-button-square/80",
+ ];
 
  return (
   <>
@@ -103,7 +108,11 @@ export default function QuestionAnswer({ userId, quizId }: { userId: string; qui
        {question.options.map((option, index) => {
         const SelectedIcon = icons[index % icons.length];
         return (
-         <Button key={`${option.option}-${index}`} className={cn("aspect-square h-auto w-full justify-start rounded-xl text-white", colors[index % colors.length])} onClick={() => submitAnswer(index)}>
+         <Button
+          key={`${option.option}-${index}`}
+          className={cn("aspect-square h-auto w-full justify-start rounded-xl text-white", colors[index % colors.length])}
+          onClick={() => submitAnswer(index)}
+         >
           <SelectedIcon fill="currentColor" className="h-full! w-full!" />
          </Button>
         );

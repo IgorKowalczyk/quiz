@@ -69,7 +69,12 @@ export default function QuestionDisplay({ quizId, auth }: { quizId: string; auth
  }, [quizId, router]);
 
  const icons = [TriangleIcon, DiamondIcon, CircleIcon, SquareIcon];
- const colors = ["bg-button-triangle hover:bg-button-triangle/80", "bg-button-diamond hover:bg-button-diamond/80", "bg-button-circle hover:bg-button-circle/80", "bg-button-square hover:bg-button-square/80"];
+ const colors = [
+  "bg-button-triangle hover:bg-button-triangle/80",
+  "bg-button-diamond hover:bg-button-diamond/80",
+  "bg-button-circle hover:bg-button-circle/80",
+  "bg-button-square hover:bg-button-square/80",
+ ];
 
  return (
   <>
