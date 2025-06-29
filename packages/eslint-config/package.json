@@ -8,11 +8,11 @@
     "./next": "./next.ts"
   },
   "dependencies": {
-    "@igorkowalczyk/eslint-config": "3.0.8",
+    "@eslint/js": "9.30.0",
+    "@igorkowalczyk/eslint-config": "3.1.0",
     "@next/eslint-plugin-next": "15.3.4",
-    "eslint": "9.29.0",
-    "@eslint/js": "9.29.0",
+    "eslint": "9.30.0",
     "eslint-plugin-turbo": "2.5.4"
   },
-    "packageManager": "pnpm@10.12.3"
+  "packageManager": "pnpm@10.12.3"
 }
