@@ -52,8 +52,8 @@ importers:
         specifier: 4.20.3
         version: 4.20.3
       zod:
-        specifier: 3.25.67
-        version: 3.25.67
+        specifier: 3.25.71
+        version: 3.25.71
     devDependencies:
       '@igorkowalczyk/quiz-eslint-config':
         specifier: workspace:*
@@ -230,11 +230,11 @@ importers:
         specifier: 5.5.6
         version: 5.5.6
       zod:
-        specifier: 3.25.67
-        version: 3.25.67
+        specifier: 3.25.71
+        version: 3.25.71
       zod-validation-error:
         specifier: 3.5.2
-        version: 3.5.2(zod@3.25.67)
+        version: 3.5.2(zod@3.25.71)
     devDependencies:
       '@igorkowalczyk/quiz-typescript-config':
         specifier: workspace:*
@@ -3931,8 +3931,8 @@ packages:
     peerDependencies:
       zod: ^3.25.0
 
-  zod@3.25.67:
-    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
+  zod@3.25.71:
+    resolution: {integrity: sha512-BsBc/NPk7h8WsUWYWYL+BajcJPY8YhjelaWu2NMLuzgraKAz4Lb4/6K11g9jpuDetjMiqhZ6YaexFLOC0Ogi3Q==}
 
 snapshots:
 
@@ -4105,7 +4105,7 @@ snapshots:
       '@eslint-react/eff': 1.52.2
       '@typescript-eslint/utils': 8.35.0(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
       ts-pattern: 5.7.1
-      zod: 3.25.67
+      zod: 3.25.71
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -4117,7 +4117,7 @@ snapshots:
       '@eslint-react/kit': 1.52.2(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
       '@typescript-eslint/utils': 8.35.0(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
       ts-pattern: 5.7.1
-      zod: 3.25.67
+      zod: 3.25.71
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -7939,8 +7939,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-validation-error@3.5.2(zod@3.25.67):
+  zod-validation-error@3.5.2(zod@3.25.71):
     dependencies:
-      zod: 3.25.67
+      zod: 3.25.71
 
-  zod@3.25.67: {}
+  zod@3.25.71: {}
