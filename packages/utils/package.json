@@ -20,5 +20,5 @@
     "@igorkowalczyk/quiz-typescript-config": "workspace:*",
     "@types/node": "22.16.0"
   },
-  "packageManager": "pnpm@10.12.4"
+  "packageManager": "pnpm@10.13.1"
 }
