@@ -20,7 +20,7 @@
   "socket.io": "4.8.1",
   "socket.io-client": "4.8.1",
   "tsx": "4.20.3",
-  "zod": "3.25.74"
+  "zod": "4.0.2"
  },
  "devDependencies": {
   "@igorkowalczyk/quiz-eslint-config": "workspace:*",
