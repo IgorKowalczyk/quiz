@@ -52,8 +52,8 @@ importers:
         specifier: 4.20.3
         version: 4.20.3
       zod:
-        specifier: 4.0.5
-        version: 4.0.5
+        specifier: 4.0.8
+        version: 4.0.8
     devDependencies:
       '@igorkowalczyk/quiz-eslint-config':
         specifier: workspace:*
@@ -230,11 +230,11 @@ importers:
         specifier: 5.6.0
         version: 5.6.0
       zod:
-        specifier: 4.0.5
-        version: 4.0.5
+        specifier: 4.0.8
+        version: 4.0.8
       zod-validation-error:
         specifier: 3.5.3
-        version: 3.5.3(zod@4.0.5)
+        version: 3.5.3(zod@4.0.8)
     devDependencies:
       '@igorkowalczyk/quiz-typescript-config':
         specifier: workspace:*
@@ -3941,8 +3941,8 @@ packages:
   zod@3.25.74:
     resolution: {integrity: sha512-J8poo92VuhKjNknViHRAIuuN6li/EwFbAC8OedzI8uxpEPGiXHGQu9wemIAioIpqgfB4SySaJhdk0mH5Y4ICBg==}
 
-  zod@4.0.5:
-    resolution: {integrity: sha512-/5UuuRPStvHXu7RS+gmvRf4NXrNxpSllGwDnCBcJZtQsKrviYXm54yDGV2KYNLT5kq0lHGcl7lqWJLgSaG+tgA==}
+  zod@4.0.8:
+    resolution: {integrity: sha512-+MSh9cZU9r3QKlHqrgHMTSr3QwMGv4PLfR0M4N/sYWV5/x67HgXEhIGObdBkpnX8G78pTgWnIrBL2lZcNJOtfg==}
 
 snapshots:
 
@@ -7952,10 +7952,10 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-validation-error@3.5.3(zod@4.0.5):
+  zod-validation-error@3.5.3(zod@4.0.8):
     dependencies:
-      zod: 4.0.5
+      zod: 4.0.8
 
   zod@3.25.74: {}
 
-  zod@4.0.5: {}
+  zod@4.0.8: {}
