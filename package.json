@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@igorkowalczyk/prettier-config": "3.1.0",
-    "dotenv": "17.2.0",
+    "dotenv": "17.2.1",
     "prettier": "3.6.2",
     "turbo": "2.5.5",
     "typescript": "5.8.3"
