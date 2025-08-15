@@ -227,8 +227,8 @@ importers:
         specifier: 5.5.0
         version: 5.5.0
       redis:
-        specifier: 5.6.1
-        version: 5.6.1
+        specifier: 5.8.1
+        version: 5.8.1
       zod:
         specifier: 4.0.17
         version: 4.0.17
@@ -1521,33 +1521,33 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
-  '@redis/bloom@5.6.1':
-    resolution: {integrity: sha512-5/22U76IMEfn6TeZ+uvjXspHw+ykBF0kpBa8xouzeHaQMXs/auqBUOEYzU2VKYDvnd2RSpPTyIg82oB7PpUgLg==}
+  '@redis/bloom@5.8.1':
+    resolution: {integrity: sha512-hJOJr/yX6BttnyZ+nxD3Ddiu2lPig4XJjyAK1v7OSHOJNUTfn3RHBryB9wgnBMBdkg9glVh2AjItxIXmr600MA==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@redis/client': ^5.6.1
+      '@redis/client': ^5.8.1
 
-  '@redis/client@5.6.1':
-    resolution: {integrity: sha512-bWHmSFIJ5w1Y4aHsYs46XMDHKQsBHFRhNcllYaBxz2Zl+lu+gbm5yI9BqxvKh48bLTs/Wx1Kns0gN2WIasE8MA==}
+  '@redis/client@5.8.1':
+    resolution: {integrity: sha512-hD5Tvv7G0t8b3w8ao3kQ4jEPUmUUC6pqA18c8ciYF5xZGfUGBg0olQHW46v6qSt4O5bxOuB3uV7pM6H5wEjBwA==}
     engines: {node: '>= 18'}
 
-  '@redis/json@5.6.1':
-    resolution: {integrity: sha512-cTggVzPIVuiFeXcEcnTRiUzV7rmUvM9KUYxWiHyjsAVACTEUe4ifKkvzrij0H/z3ammU5tfGACffDB3olBwtVA==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      '@redis/client': ^5.6.1
-
-  '@redis/search@5.6.1':
-    resolution: {integrity: sha512-+eOjx8O2YoKygjqkLpTHqcAq0zKLjior+ee2tRBx/3RSf1+OHxiC9Y6NstshQpvB1XHqTw9n7+f0+MsRJZrp0g==}
+  '@redis/json@5.8.1':
+    resolution: {integrity: sha512-kyvM8Vn+WjJI++nRsIoI9TbdfCs1/TgD0Hp7Z7GiG6W4IEBzkXGQakli+R5BoJzUfgh7gED2fkncYy1NLprMNg==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@redis/client': ^5.6.1
+      '@redis/client': ^5.8.1
 
-  '@redis/time-series@5.6.1':
-    resolution: {integrity: sha512-sd3q4jMJdoSO2akw1L9NrdFI1JJ6zeMgMUoTh4a34p9sY3AnOI4aDLCecy8L2IcPAP1oNR3TbLFJiCJDQ35QTA==}
+  '@redis/search@5.8.1':
+    resolution: {integrity: sha512-CzuKNTInTNQkxqehSn7QiYcM+th+fhjQn5ilTvksP1wPjpxqK0qWt92oYg3XZc3tO2WuXkqDvTujc4D7kb6r/A==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@redis/client': ^5.6.1
+      '@redis/client': ^5.8.1
+
+  '@redis/time-series@5.8.1':
+    resolution: {integrity: sha512-klvdR96U9oSOyqvcectoAGhYlMOnMS3I5UWUOgdBn1buMODiwM/E4Eds7gxldKmtowe4rLJSF1CyIqyZTjy8Ow==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      '@redis/client': ^5.8.1
 
   '@reduxjs/toolkit@2.8.2':
     resolution: {integrity: sha512-MYlOhQ0sLdw4ud48FoC5w0dH9VfWQjtCjreKwYTT3l+r427qYC5Y8PihNutepr8XrNaBUDQo9khWUwQxZaqt5A==}
@@ -3491,8 +3491,8 @@ packages:
       react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-is: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  redis@5.6.1:
-    resolution: {integrity: sha512-O9DwAvcBm/lrlkGE0A6gNBtUdA8J9oD9njeLYlLzmm+MGTR7nd7VkpspfXqeXFg3gm89zldDqckyaHhXfhY80g==}
+  redis@5.8.1:
+    resolution: {integrity: sha512-RZjBKYX/qFF809x6vDcE5VA6L3MmiuT+BkbXbIyyyeU0lPD47V4z8qTzN+Z/kKFwpojwCItOfaItYuAjNs8pTQ==}
     engines: {node: '>= 18'}
 
   redux-thunk@3.1.0:
@@ -5280,25 +5280,25 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
-  '@redis/bloom@5.6.1(@redis/client@5.6.1)':
+  '@redis/bloom@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.6.1
+      '@redis/client': 5.8.1
 
-  '@redis/client@5.6.1':
+  '@redis/client@5.8.1':
     dependencies:
       cluster-key-slot: 1.1.2
 
-  '@redis/json@5.6.1(@redis/client@5.6.1)':
+  '@redis/json@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.6.1
+      '@redis/client': 5.8.1
 
-  '@redis/search@5.6.1(@redis/client@5.6.1)':
+  '@redis/search@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.6.1
+      '@redis/client': 5.8.1
 
-  '@redis/time-series@5.6.1(@redis/client@5.6.1)':
+  '@redis/time-series@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.6.1
+      '@redis/client': 5.8.1
 
   '@reduxjs/toolkit@2.8.2(react-redux@9.2.0(@types/react@19.1.10)(react@19.1.1)(redux@5.0.1))(react@19.1.1)':
     dependencies:
@@ -7418,13 +7418,13 @@ snapshots:
       - '@types/react'
       - redux
 
-  redis@5.6.1:
+  redis@5.8.1:
     dependencies:
-      '@redis/bloom': 5.6.1(@redis/client@5.6.1)
-      '@redis/client': 5.6.1
-      '@redis/json': 5.6.1(@redis/client@5.6.1)
-      '@redis/search': 5.6.1(@redis/client@5.6.1)
-      '@redis/time-series': 5.6.1(@redis/client@5.6.1)
+      '@redis/bloom': 5.8.1(@redis/client@5.8.1)
+      '@redis/client': 5.8.1
+      '@redis/json': 5.8.1(@redis/client@5.8.1)
+      '@redis/search': 5.8.1(@redis/client@5.8.1)
+      '@redis/time-series': 5.8.1(@redis/client@5.8.1)
 
   redux-thunk@3.1.0(redux@5.0.1):
     dependencies:
