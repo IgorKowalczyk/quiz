@@ -12,7 +12,7 @@
     "@igorkowalczyk/eslint-config": "3.1.0",
     "@next/eslint-plugin-next": "15.4.6",
     "eslint": "9.32.0",
-    "eslint-plugin-turbo": "2.5.5"
+    "eslint-plugin-turbo": "2.5.6"
   },
   "packageManager": "pnpm@10.13.1"
 }
