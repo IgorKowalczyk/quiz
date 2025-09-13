@@ -17,7 +17,7 @@
     "turbo": "2.5.6",
     "typescript": "5.9.2"
   },
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.16.1",
   "devDependencies": {
     "prettier-plugin-tailwindcss": "0.6.14"
   }
